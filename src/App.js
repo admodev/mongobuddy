@@ -1,16 +1,8 @@
-// Components
-import SideNavComponent from './Components/SideNav';
-import HeaderComponent from './Components/Header';
+// Views
+import HomeView from './Views/Home';
 
 function App() {
-  return (
-    <div>
-      <HeaderComponent />
-      <div>
-        <SideNavComponent />
-      </div>
-    </div>
-  );
+  return <HomeView />;
 }
 
 export default App;
