@@ -1,0 +1,30 @@
+.sideNavMenu {
+    width: 250px;
+    height: 100vh;
+    background-color: #344e41;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: solid 1px #3a5a40;
+}
+
+.navLinksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navLinkIcon {
+    color: #fff;
+    font-size: 16px;
+}
+
+.navLinks {
+    margin: 25px auto;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
