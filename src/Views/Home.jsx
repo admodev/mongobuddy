@@ -10,6 +10,8 @@ import CardComponent from '../Components/Card';
 import styles from './Home.module.css';
 
 const HomeView = () => {
+  const [queryText, setQueryText] = React.useState('');
+
   return(
     <div className={styles.mainContainer}>
       <HeaderComponent />
@@ -18,12 +20,9 @@ const HomeView = () => {
         <CardComponent>
           <h2>Your query: </h2>
           <p>
-            {'Example query, delete this and add functional queries for documents and db edition here...'}
-            const cursor = db.collection('inventory').find(&#123;
-            status: 'A',
-            qty: &#123; $lt: 30 &#125;
-            &#125;);
+            {!queryText ? 'Query goes here...' : queryText}
           </p>
+          <textarea className={styles.queryText} name="query" placeholder="Your query goes here..." cols="60" rows="20" maxlength="300" required value={queryText} onChange={(e) => setQueryText(e.target.value)}></textarea>
         </CardComponent>
       </div>
     </div>
